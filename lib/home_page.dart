@@ -18,8 +18,8 @@ class _HomePage extends State<HomePage> {
   bool _isSearching = false;
   List<dynamic> _list = [];
   List<dynamic> searchResult = [];
-  String _searchText = '';
 
+  /// Build a customized appBar widget
   PreferredSizeWidget buildAppBar(BuildContext context) {
     return AppBar(
       centerTitle: true,
@@ -67,6 +67,7 @@ class _HomePage extends State<HomePage> {
     super.initState();
   }
 
+  /// create a list of searchable strings
   void value() {
     _list.add('Indian rupee');
     _list.add('United State dollar');
@@ -76,22 +77,25 @@ class _HomePage extends State<HomePage> {
     _list.add('Japanese yen');
   }
 
+  /// attach an event listener to the controller
+  /// and check if the controller text isn't
+  /// if yes, change the search flag (_isSaerching) to true
   void _handleSearchStart() {
     _controller.addListener(() {
       if (_controller.text.isEmpty) {
         setState(() {
           _isSearching = false;
-          _searchText = '';
         });
       } else {
         setState(() {
           _isSearching = true;
-          _searchText = _controller.text;
         });
       }
     });
   }
 
+  /// stop seaching and show back the 
+  /// original appBar text widget
   void _handleSearchEnd() {
     setState(() {
       this.icon = Icon(Icons.search, color: Colors.white);
@@ -104,6 +108,8 @@ class _HomePage extends State<HomePage> {
     });
   }
 
+  /// populate the searchResult list with
+  /// all the strings that match the searchText
   void searchOperation(String searchText) {
     searchResult.clear();
     if (_isSearching) {
