@@ -1,6 +1,6 @@
 # flutter_search
 
-This project shows how to implement the adaptive search in Flutter 
+This project shows how to implement the adaptive search in Flutter.<br>
 The code is readable enough for all beginners.
 
 ## Images
