@@ -1,16 +1,10 @@
 # flutter_search
 
-A new Flutter project.
+This project shows how to implement the adaptive search in Flutter 
+The code is readable enough for all beginners.
 
-## Getting Started
+## Images
+<img width="201" alt="img1" src="https://user-images.githubusercontent.com/19254270/128639557-b4e9e043-b4a5-48cb-82fa-c1f0f89d992c.png">
+<img width="198" alt="img2" src="https://user-images.githubusercontent.com/19254270/128639564-d8128085-0f72-463e-b069-d11db28468a9.png">
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
